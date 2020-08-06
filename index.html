@@ -4,6 +4,75 @@
 <head>
   <meta charset="UTF-8">
   <title>Student Bio</title>
+
+  <style>
+      /*
+    Each of these CSS elements is associated with an HTML Element, Class, or ID.
+    Flip between this CSS file and the HTML to see how things line up.
+    Experiment with deleting lines of code from the CSS to see how it affects the webpage when you refresh in the browser.
+    */
+
+    body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333;
+    background: url("https://www.hdcarwallpapers.com/walls/2020_bentley_continental_gt_v8_4k-HD.jpg") no-repeat center;
+    background-size: cover;
+    }
+
+    header {
+    background: #333;
+    }
+
+    h1 {
+    padding: 20px 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #eee;
+    text-align: center;
+    }
+
+    h2 {
+    font-size: 24px;
+    background: #eee;
+    }
+
+    .list {
+    color: #d21034;
+    }
+
+    .container {
+    width: 1024px;
+    margin: 0 auto;
+    }
+
+    #main-bio,
+    #contact-info,
+    #bio-image {
+    float: left;
+    }
+
+    #main-bio {
+    width: 70%;
+    background-color: rgba(238, 238, 238, 0.5);
+    }
+
+    #contact-info {
+    width: 30%;
+    background-color: rgba(238, 238, 238, 0.5);
+    }
+
+    #bio-image {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    }
+
+  </style>
 </head>
 
 <body>
@@ -11,23 +80,23 @@
     <h1>Student Bio</h1>
   </header>
 
-  <div>
+  <div class="container">
 
-    <section>
+    <section id="main-bio">
 
       <h2>Avvi Singh</h2>
 
-      <img src="https://scontent.fmel5-1.fna.fbcdn.net/v/t1.0-9/78329284_966757630361074_3969356273282973696_n.jpg?_nc_cat=108&_nc_sid=09cbfe&_nc_ohc=lMh9SRjpHDQAX_wbDCV&_nc_ht=scontent.fmel5-1.fna&oh=0e3fa0202ff952124760868d7bb86373&oe=5F4F2AC0" alt="Picture of my Face">
+      <img id="bio-image" src="https://scontent.fmel5-1.fna.fbcdn.net/v/t1.0-9/78329284_966757630361074_3969356273282973696_n.jpg?_nc_cat=108&_nc_sid=09cbfe&_nc_ohc=lMh9SRjpHDQAX_wbDCV&_nc_ht=scontent.fmel5-1.fna&oh=0e3fa0202ff952124760868d7bb86373&oe=5F4F2AC0" alt="Picture of my Face">
 
       <p>Hi! My names, Avvi and I'm a 22 year old aspiring Web Developer from Melbourne, Australia. I am currently about to complete my Bachelor of Science at the University of Melbourne with a Major in Microbiology and Immunology. After 2 years of my Science degree, I discovered that even though I love <em>learning</em>science, working as a researcher in the field was just not for me. As such, I gave myself a gap year to allow myself time to discover new passions. And that, is the story of how I stumbled upon the fascinating field of Web Development. I'll see you around.</p>
     </section>
 
-    <section>
+    <section id="contact-info">
       <h2>Contact Info</h2>
       <ul>
-        <li><strong>Email:</strong> <a href="#">singh.avvi98@gmail.com</a></li>
-        <li><strong>Github:</strong> <a href="https://github.com/avvisingh">github.com/avvisingh</a></li>
-        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+        <li><strong>Email:</strong> <a id="list" href="#">singh.avvi98@gmail.com</a></li>
+        <li><strong>Github:</strong> <a id="list" href="https://github.com/avvisingh">github.com/avvisingh</a></li>
+        <li><strong>Portfolio:</strong> <a id="list" href="#">coming soon</a></li>
       </ul>
     </section>
   </div>
